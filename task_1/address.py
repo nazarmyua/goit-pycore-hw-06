@@ -26,7 +26,7 @@ class Name(Field):
 class Phone(Field):
     def validate(self, value):
         if not (len(value) == 10 and value.isdigit()):
-            raise ValueError("incalidValie")
+            raise ValueError(f"invalid value {value}")
 
 
 class Record:
